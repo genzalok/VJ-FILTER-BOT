@@ -2124,7 +2124,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(PAYMENT_QR)
         )
         await query.message.edit_text(
-            text=PAYMENT_TEXT
+            text=script.PREMIUMM_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
