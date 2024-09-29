@@ -2121,7 +2121,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
-            InputMediaPhoto(PAYMENT_PHOTO)
+            InputMediaPhoto(PAYMENT_QR)
         )
         await query.message.edit_text(
             text=PAYMENT_TEXT
