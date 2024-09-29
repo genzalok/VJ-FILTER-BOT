@@ -223,9 +223,7 @@ Nᴀᴍᴇ - {}"""
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : {file_name}
-
-<b> Size ⚙️: {file_size}</b>""" 
+    CAPTION = """<b><a href='https://t.me/ipopcorn_group'>📂 {file_name}</a> """ 
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {qurey}
