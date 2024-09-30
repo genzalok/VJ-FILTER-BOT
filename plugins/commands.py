@@ -442,9 +442,10 @@ async def start(client, message):
             if not await db.has_premium_access(message.from_user.id):
                 if not await check_verification(client, message.from_user.id) and VERIFY == True:
                     btn = [[
-                        InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
+                        InlineKeyboardButton("♻️ᴠᴇʀɪꜰʏ♻️", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=")),
+                        InlineKeyboardButton("⚠️ʜᴏᴡ ᴛᴏ ᴠᴇʀɪꜰʏ⚠️", url=VERIFY_TUTORIAL)
                     ],[
-                        InlineKeyboardButton("How To Open Link & Verify", url=VERIFY_TUTORIAL)
+                        InlineKeyboardButton("🚸ʀᴇᴍᴏᴠᴇ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ🚸", callback_data="premium")
                     ]]
                     await message.reply_text(
                         text="<b>Just Verify One Time And Get Movies For Next 12hr Without Any Verification.\n\nबस एक बार verify करें और बिना किसी verification के अगले 12 घंटों के लिए फिल्में प्राप्त करें.\n\nClick The Button Below To Check How to Verify ✅</b>",
@@ -510,10 +511,11 @@ async def start(client, message):
         try:
             if not await db.has_premium_access(message.from_user.id):
                 if not await check_verification(client, message.from_user.id) and VERIFY == True:
-                    btn = [[
-                        InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
+                    btn = [[                    
+                        InlineKeyboardButton("♻️ᴠᴇʀɪꜰʏ♻️", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=")),
+                        InlineKeyboardButton("⚠️ʜᴏᴡ ᴛᴏ ᴠᴇʀɪꜰʏ⚠️", url=VERIFY_TUTORIAL)
                     ],[
-                        InlineKeyboardButton("How To Open Link & Verify", url=VERIFY_TUTORIAL)
+                        InlineKeyboardButton("🚸ʀᴇᴍᴏᴠᴇ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ🚸", callback_data="premium")
                     ]]
                     await message.reply_text(
                         text="<b>Just Verify One Time And Get Movies For Next 12hr Without Any Verification.\n\nबस एक बार verify करें और बिना किसी verification के अगले 12 घंटों के लिए फिल्में प्राप्त करें.\n\nClick The Button Below To Check How to Verify ✅</b>",
@@ -579,9 +581,10 @@ async def start(client, message):
     if not await db.has_premium_access(message.from_user.id):
         if not await check_verification(client, message.from_user.id) and VERIFY == True:
             btn = [[
-                InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
+                InlineKeyboardButton("♻️ᴠᴇʀɪꜰʏ♻️", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=")),
+                InlineKeyboardButton("⚠️ʜᴏᴡ ᴛᴏ ᴠᴇʀɪꜰʏ⚠️", url=VERIFY_TUTORIAL)
             ],[
-                InlineKeyboardButton("How To Open Link & Verify", url=VERIFY_TUTORIAL)
+                InlineKeyboardButton("🚸ʀᴇᴍᴏᴠᴇ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ🚸", callback_data="premium")
             ]]
             await message.reply_text(
                 text="<b>Just Verify One Time And Get Movies For Next 12hr Without Any Verification.\n\nबस एक बार verify करें और बिना किसी verification के अगले 12 घंटों के लिए फिल्में प्राप्त करें.\n\nClick The Button Below To Check How to Verify ✅</b>",
