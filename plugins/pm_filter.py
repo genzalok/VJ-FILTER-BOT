@@ -2182,6 +2182,21 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+
+    elif query.data == "checkplan":
+        btn = [[
+            InlineKeyboardButton(' ꜱᴇɴᴅ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ', url="https://t.me/genzalok")
+        ],[
+            InlineKeyboardButton('ᴄʟᴏꜱᴇ', callback_data='close_data')
+        ]]
+        reply_markup = InlineKeyboardMarkup(btn)
+        await query.message.reply_photo(
+            photo=(PAYMENT_QR),
+            caption=script.PREMIUMM_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+        
     elif query.data == "manuelfilter":
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='filters'),
