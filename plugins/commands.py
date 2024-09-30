@@ -152,14 +152,14 @@ async def start(client, message):
 
     if len(message.command) == 2 and message.command[1] in ["buysubscription"]:
         buttons = [[
-                    InlineKeyboardButton('ꜱᴇɴᴅ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ', url="https://t.me/genzalok")
+                    InlineKeyboardButton('ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ʀᴇᴄᴇɪᴘᴛ 🧾', url="https://t.me/genzalok")
                   ],[
-                    InlineKeyboardButton('ᴄʟᴏꜱᴇ', callback_data='close_data')
+                    InlineKeyboardButton('🚫 ᴄʟᴏꜱᴇ 🚫', callback_data='close_data')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=(PAYMENT_QR),
-            caption=script.PREMIUM_TXT,
+            caption=script.PREMIUMM_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -460,7 +460,7 @@ async def start(client, message):
                         InlineKeyboardButton("♻️ᴠᴇʀɪꜰʏ♻️", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=")),
                         InlineKeyboardButton("⚠️ʜᴏᴡ ᴛᴏ ᴠᴇʀɪꜰʏ⚠️", url=VERIFY_TUTORIAL)
                     ],[
-                        InlineKeyboardButton("🚸ʀᴇᴍᴏᴠᴇ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ🚸", callback_data="premium")
+                        InlineKeyboardButton("🚸ʀᴇᴍᴏᴠᴇ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ🚸", callback_data="checkplan")
                     ]]
                     await message.reply_text(
                         text="<b>Just Verify One Time And Get Movies For Next 12hr Without Any Verification.\n\nबस एक बार verify करें और बिना किसी verification के अगले 12 घंटों के लिए फिल्में प्राप्त करें.\n\nClick The Button Below To Check How to Verify ✅</b>",
@@ -530,7 +530,7 @@ async def start(client, message):
                         InlineKeyboardButton("♻️ᴠᴇʀɪꜰʏ♻️", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=")),
                         InlineKeyboardButton("⚠️ʜᴏᴡ ᴛᴏ ᴠᴇʀɪꜰʏ⚠️", url=VERIFY_TUTORIAL)
                     ],[
-                        InlineKeyboardButton("🚸ʀᴇᴍᴏᴠᴇ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ🚸", callback_data="premium")
+                        InlineKeyboardButton("🚸ʀᴇᴍᴏᴠᴇ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ🚸", callback_data="checkplan")
                     ]]
                     await message.reply_text(
                         text="<b>Just Verify One Time And Get Movies For Next 12hr Without Any Verification.\n\nबस एक बार verify करें और बिना किसी verification के अगले 12 घंटों के लिए फिल्में प्राप्त करें.\n\nClick The Button Below To Check How to Verify ✅</b>",
@@ -599,7 +599,7 @@ async def start(client, message):
                 InlineKeyboardButton("♻️ᴠᴇʀɪꜰʏ♻️", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=")),
                 InlineKeyboardButton("⚠️ʜᴏᴡ ᴛᴏ ᴠᴇʀɪꜰʏ⚠️", url=VERIFY_TUTORIAL)
             ],[
-                InlineKeyboardButton("🚸ʀᴇᴍᴏᴠᴇ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ🚸", callback_data="premium")
+                InlineKeyboardButton("🚸ʀᴇᴍᴏᴠᴇ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ🚸", callback_data="checkplan")
             ]]
             await message.reply_text(
                 text="<b>Just Verify One Time And Get Movies For Next 12hr Without Any Verification.\n\nबस एक बार verify करें और बिना किसी verification के अगले 12 घंटों के लिए फिल्में प्राप्त करें.\n\nClick The Button Below To Check How to Verify ✅</b>",
@@ -1489,7 +1489,7 @@ async def plans_cmd_handler(client, message):
     reply_markup = InlineKeyboardMarkup(btn)
     await message.reply_photo(
         photo=PAYMENT_QR,
-        caption=PAYMENT_TEXT,
+        caption=script.PREMIUMM_TXT,
         reply_markup=reply_markup
     )
         
