@@ -138,6 +138,10 @@ async def next_page(bot, query):
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
+        btn.insert(0, [
+            InlineKeyboardButton("ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ", url=f"https://telegram.me/{temp.U_NAME}?start=buysubscription"),
+            InlineKeyboardButton("ᴘᴀɪᴅ ᴘʀᴏᴍᴏᴛɪᴏɴ", url=f"https://t.me/genzalok")
+        ])
     else:
         btn = []
         btn.insert(0, 
@@ -151,6 +155,10 @@ async def next_page(bot, query):
             InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+        ])
+        btn.insert(0, [
+            InlineKeyboardButton("ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ", url=f"https://telegram.me/{temp.U_NAME}?start=buysubscription"),
+            InlineKeyboardButton("ᴘᴀɪᴅ ᴘʀᴏᴍᴏᴛɪᴏɴ", url=f"https://t.me/genzalok")
         ])
     try:
         if settings['max_btn']:
@@ -365,6 +373,10 @@ async def filter_yearss_cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
+        btn.insert(0, [
+            InlineKeyboardButton("ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ", url=f"https://telegram.me/{temp.U_NAME}?start=buysubscription"),
+            InlineKeyboardButton("ᴘᴀɪᴅ ᴘʀᴏᴍᴏᴛɪᴏɴ", url=f"https://t.me/genzalok")
+        ])
     else:
         btn = []
         btn.insert(0, 
@@ -378,6 +390,10 @@ async def filter_yearss_cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+        ])
+        btn.insert(0, [
+            InlineKeyboardButton("ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ", url=f"https://telegram.me/{temp.U_NAME}?start=buysubscription"),
+            InlineKeyboardButton("ᴘᴀɪᴅ ᴘʀᴏᴍᴏᴛɪᴏɴ", url=f"https://t.me/genzalok")
         ])
 
     if offset != "":
@@ -517,6 +533,10 @@ async def filter_episodes_cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
+        btn.insert(0, [
+            InlineKeyboardButton("ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ", url=f"https://telegram.me/{temp.U_NAME}?start=buysubscription"),
+            InlineKeyboardButton("ᴘᴀɪᴅ ᴘʀᴏᴍᴏᴛɪᴏɴ", url=f"https://t.me/genzalok")
+        ])
     else:
         btn = []
         btn.insert(0, 
@@ -530,6 +550,10 @@ async def filter_episodes_cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+        ])
+        btn.insert(0, [
+            InlineKeyboardButton("ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ", url=f"https://telegram.me/{temp.U_NAME}?start=buysubscription"),
+            InlineKeyboardButton("ᴘᴀɪᴅ ᴘʀᴏᴍᴏᴛɪᴏɴ", url=f"https://t.me/genzalok")
         ])
 
     if offset != "":
@@ -671,6 +695,10 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
+        btn.insert(0, [
+            InlineKeyboardButton("ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ", url=f"https://telegram.me/{temp.U_NAME}?start=buysubscription"),
+            InlineKeyboardButton("ᴘᴀɪᴅ ᴘʀᴏᴍᴏᴛɪᴏɴ", url=f"https://t.me/genzalok")
+        ])
     else:
         btn = []
         btn.insert(0, 
@@ -684,6 +712,10 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+        ])
+        btn.insert(0, [
+            InlineKeyboardButton("ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ", url=f"https://telegram.me/{temp.U_NAME}?start=buysubscription"),
+            InlineKeyboardButton("ᴘᴀɪᴅ ᴘʀᴏᴍᴏᴛɪᴏɴ", url=f"https://t.me/genzalok")
         ])
 
     if offset != "":
@@ -854,6 +886,10 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
+        btn.insert(0, [
+            InlineKeyboardButton("ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ", url=f"https://telegram.me/{temp.U_NAME}?start=buysubscription"),
+            InlineKeyboardButton("ᴘᴀɪᴅ ᴘʀᴏᴍᴏᴛɪᴏɴ", url=f"https://t.me/genzalok")
+        ])
     else:
         btn = []
         btn.insert(0, 
@@ -867,6 +903,10 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+        ])
+        btn.insert(0, [
+            InlineKeyboardButton("ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ", url=f"https://telegram.me/{temp.U_NAME}?start=buysubscription"),
+            InlineKeyboardButton("ᴘᴀɪᴅ ᴘʀᴏᴍᴏᴛɪᴏɴ", url=f"https://t.me/genzalok")
         ])
         
     offset = 0
@@ -1009,6 +1049,10 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
                 InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
             ])
+            btn.insert(0, [
+            InlineKeyboardButton("ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ", url=f"https://telegram.me/{temp.U_NAME}?start=buysubscription"),
+            InlineKeyboardButton("ᴘᴀɪᴅ ᴘʀᴏᴍᴏᴛɪᴏɴ", url=f"https://t.me/genzalok")
+            ])
 
         else:
             btn.insert(0, 
@@ -1022,6 +1066,10 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
                 InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
                 InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+            ])
+            btn.insert(0, [
+            InlineKeyboardButton("ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ", url=f"https://telegram.me/{temp.U_NAME}?start=buysubscription"),
+            InlineKeyboardButton("ᴘᴀɪᴅ ᴘʀᴏᴍᴏᴛɪᴏɴ", url=f"https://t.me/genzalok")
             ])
                 
     except KeyError:
@@ -1037,6 +1085,10 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+        ])
+        btn.insert(0, [
+            InlineKeyboardButton("ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ", url=f"https://telegram.me/{temp.U_NAME}?start=buysubscription"),
+            InlineKeyboardButton("ᴘᴀɪᴅ ᴘʀᴏᴍᴏᴛɪᴏɴ", url=f"https://t.me/genzalok")
         ])
 
     if offset != "":
@@ -2805,6 +2857,10 @@ async def auto_filter(client, name, msg, reply_msg, ai_search, spoll=False):
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
         ])
+        btn.insert(0, [
+            InlineKeyboardButton("ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ", url=f"https://telegram.me/{temp.U_NAME}?start=buysubscription"),
+            InlineKeyboardButton("ᴘᴀɪᴅ ᴘʀᴏᴍᴏᴛɪᴏɴ", url=f"https://t.me/genzalok")
+        ])
     else:
         btn = []
         btn.insert(0, 
@@ -2818,6 +2874,10 @@ async def auto_filter(client, name, msg, reply_msg, ai_search, spoll=False):
             InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
             InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
             InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+        ])
+        btn.insert(0, [
+            InlineKeyboardButton("ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ", url=f"https://telegram.me/{temp.U_NAME}?start=buysubscription"),
+            InlineKeyboardButton("ᴘᴀɪᴅ ᴘʀᴏᴍᴏᴛɪᴏɴ", url=f"https://t.me/genzalok")
         ])
     if offset != "":
         req = message.from_user.id if message.from_user else 0
