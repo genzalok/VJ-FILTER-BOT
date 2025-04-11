@@ -93,11 +93,11 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 # Token Verification Info :
 VERIFY = bool(environ.get('VERIFY', True))
 VERIFY_SECOND_SHORTNER = bool(environ.get('VERIFY_SECOND_SHORTNER', False))
-VERIFY_SHORTLINK_URL = environ.get('VERIFY_SHORTLINK_URL', 'modijiurl.com')
-VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', '6656bc95624b671dea0928d76e9f8d7b5d9dba16')
+VERIFY_SHORTLINK_URL = environ.get('VERIFY_SHORTLINK_URL', 'urlxpro.com')
+VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', '17d2876b07a59d2d4c98447243be1efcc45143c3')
 # if verify second shortner is True then fill below url and api
-VERIFY_SND_SHORTLINK_URL = environ.get('VERIFY_SND_SHORTLINK_URL', 'modijiurl.com')
-VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '6656bc95624b671dea0928d76e9f8d7b5d9dba16')
+VERIFY_SND_SHORTLINK_URL = environ.get('VERIFY_SND_SHORTLINK_URL', 'urlxpro.com')
+VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '17d2876b07a59d2d4c98447243be1efcc45143c3')
 VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/FRverfication0/3')
 
 # Shortlink Info
